@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trabalhando com template strings</title>
+</head>
+<body>
+    <script>
+        const name = 'Alex';
+        const age = 23;0
+
+        const sentece = 'olá, Meu nome é ' + name + ' eu tenho ' + age + ' anos';
+
+        const setence2 = `olá, meu nome é ${name} eu tenho ${age} anos`;
+
+        console.log(sentece);
+
+        console.log(setence2);
+
+        const html = `
+            <ul>
+                <li>
+                  ${name}
+                </li>
+                <li>
+                  ${age}
+                </li>
+            </ul>
+        `
+        const html2 = '\
+            <ul>\
+                <li>\
+                  ${name}\
+                </li>\
+                <li>\
+                  ${age}\
+                </li>\
+            </ul>\
+        '
+        console.log(html)
+        console.log(html2)
+    </script>
+    
+</body>
+</html>
