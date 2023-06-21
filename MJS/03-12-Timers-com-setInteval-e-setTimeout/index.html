@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timers com setInteval e setTimeout</title>
+</head>
+<body>
+    <script>
+      setTimeout(() => {
+        console.log('executou')
+      },5000);
+
+      const interval = setInterval(() => {
+        console.log('execultou interval')
+      },1000);
+
+      setTimeout(() => {
+        clearInterval(interval)
+      }, 5000);
+    </script>
+</body>
+</html>
