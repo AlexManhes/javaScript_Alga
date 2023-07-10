@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Human {
+            hungry = true
+
+            eat() {
+                this.hungry = false
+            }
+            
+        }
+        Human.prototype.sleep = function () {
+            this.awake = false
+        }
+        const person = new Human
+    </script>
+</body>
+</html>
