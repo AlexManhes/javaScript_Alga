@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desestruturando objetos</title>
+</head>
+<body>
+  <script>
+    const fruits = ['banana', 'morango', 'manga']
+    
+    const person =  { name: 'Du', age: 32 }
+    const person2 = { name: 'DuDu', age: 33 }
+    const person3 = { name: 'Edu', age: 34 }
+
+    const friends = [person, person2, person3]
+    const [, {name}] =friends
+
+    const chart = [[1, 2], [3, 4], [5, 6]]
+
+    const [, , [x, y]] = chart
+
+  </script>
+</body>
+</html>
