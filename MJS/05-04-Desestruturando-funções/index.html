@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CreateUser({name, age, email}){
+            return{
+                name,
+                age,
+                contract: {email}
+            }
+        }
+        const user = CreateUser({
+            name:'Alex', 
+            age: 24, 
+            email: 'alexsandermanhes@gmail.com'
+        })
+    </script>
+    
+</body>
+</html>
